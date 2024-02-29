@@ -6,3 +6,4 @@ examples/local/*
 !examples/local/basic.html
 examples/webpack/dist
 examples/typescript/bundle.js
+*.tgz
