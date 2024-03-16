@@ -9,11 +9,11 @@ import { Table } from './models'
 import { CellHookData } from './HookData'
 import { Cell, Column, Row } from './models'
 
-
 export function autoTable(d: jsPDFDocument, options: UserOptions) {
   const input = parseInput(d, options)
   const table = _createTable(d, input)
   _drawTable(d, table)
+  return table
 }
 
 export { CellHookData }

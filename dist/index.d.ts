@@ -317,6 +317,6 @@ export type CellInput = null | string | string[] | number | boolean | CellDef;
 export type RowInput = {
 	[key: string]: CellInput;
 } | HtmlRowInput | CellInput[];
-export declare function autoTable(d: jsPDFDocument, options: UserOptions): void;
+export declare function autoTable(d: jsPDFDocument, options: UserOptions): Table;
 
 export {};

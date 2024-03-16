@@ -1,6 +1,6 @@
 /*!
  * 
- *               jsPDF AutoTable plugin v3.8.3
+ *               jsPDF AutoTable plugin v3.8.4
  *
  *               Copyright (c) 2024 Simon Bengtsson, https://github.com/simonbengtsson/jsPDF-AutoTable
  *               Licensed under the MIT License.
@@ -2395,6 +2395,7 @@ function autoTable(d, options) {
     var input = (0, inputParser_1.parseInput)(d, options);
     var table = (0, tableCalculator_1.createTable)(d, input);
     (0, tableDrawer_1.drawTable)(d, table);
+    return table;
 }
 exports.autoTable = autoTable;
 

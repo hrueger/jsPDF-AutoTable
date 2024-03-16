@@ -2146,6 +2146,7 @@ function autoTable(d, options) {
     var input = parseInput(d, options);
     var table = createTable(d, input);
     drawTable(d, table);
+    return table;
 }
 
 export { Cell, CellHookData, Column, Row, Table, autoTable };
